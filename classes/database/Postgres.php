@@ -10,6 +10,8 @@
 include_once('./classes/database/ADODB_base.php');
 
 class Postgres extends ADODB_base {
+
+	var $major_version = 12;
 	// Max object name length
 	var $_maxNameLen = 63;
 	// Store the current schema
