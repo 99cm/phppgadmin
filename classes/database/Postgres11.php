@@ -18,13 +18,5 @@ class Postgres11 extends Postgres {
 	function __construct($conn) {
 		parent::__construct($conn);
 	}
-
-	// Help functions
-
-	function getHelpPages() {
-		include_once('./help/PostgresDoc11.php');
-		return $this->help_page;
-	}
-
 }
 ?>
